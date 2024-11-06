@@ -1,3 +1,4 @@
+//PROGRESS: I know the multithreading should be near the echo after Accepting the connection. I just havent figured where to put it yet
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -53,7 +54,7 @@ int main()
         }
     
         printf("Client Connected.\n");
-        
+
         //ECHO
         while ((bytes_read = recv(client_socket, buffer, MAX_BUFFER_SIZE - 1, 0))> 0)
         {
